@@ -1,0 +1,123 @@
+test.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Git Test</h1>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            What is Git, and what is it used for?
+        </article>
+        <article class="response">
+            git is a distributed version control system.
+            meaning that every developer's working copy of the code is also a repository that can contain the full history of all changes:This includes tracking modifications, additions, and deletions of files.
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            What is a repository in Git, and what is it used for?
+        </article>
+        <article class="response">
+            un dépôt Git (repository) est un espace où sont stockées toutes les versions d'un projet, ainsi que son historique de modifications.
+            on le utilise pour suivre les changements et maintenir une version organisée et contrôlée de notre code.
+
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            how do you create a new Git repository?
+        </article>
+        <article class="response">
+            pour créer un nouveau dépôt Git utilisez la commande: <strong> $git init</strong>
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you stage changes in Git, and what is the purpose of staging?
+        </article>
+        <article class="response">
+            <strong>git add</strong> Elle permet de sélectionner précisément les changements à inclure, offrant un contrôle fin sur le contenu de chaque commit.
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you commit changes in Git, and what is the purpose of committing?
+        </article>
+        <article class="response">
+            <strong>git commit -m ""</strong>Les commits servent à documenter les étapes du développement
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you create and switch between branches in Git, and what is the purpose of branching?
+        </article>
+        <article class="response">
+            Vous pouvez créer une nouvelle branche avec la commande <strong>git branch nom de la branche</strong>et passer à cette branche avec <strong>git checkout nom de la branche</strong>
+            ou bien Vous pouvez créer et passer à cette branche avec la commandes <strong>git checkout branch -b nom de la branche</strong>
+            les branches permettent aux développeurs de travailler sur des fonctionnalités ou des correctifs isolés,
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you merge branches in Git, and what is the purpose of merging?
+        </article>
+        <article class="response">
+            utilisez la commande <strong>git merge [nom de la branche]</strong>Cela permet d'incorporer les changements effectués dans une branche de développement (par exemple, une fonctionnalité) dans la branche principale du projet.
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you resolve conflicts in Git when merging branches?
+        </article>
+        <article class="response">
+            Lorsqu'il y a des conflits entre les modifications de deux branches fusionnées, Git marque ces conflits dans les fichiers concernés. Les développeurs doivent résoudre ces conflits manuellement en modifiant les fichiers en question. Une fois les conflits résolus, ils peuvent finaliser la fusion en utilisant la commande <strong>git merge --continue</strong>.
+
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you push changes from your local repository to a remote repository, and what is the purpose of pushing?
+        </article>
+        <article class="response">
+            utilisez la commande <strong>git push</strong>Pushing est essentiel pour partager votre travail avec d'autres membres de l'équipe et maintenir la synchronisation entre les dépôts locaux et distants.
+        </article>
+    </article>
+
+    <article class="question">
+        <article class="statement">
+            <img src="./res/question-mark.png" alt="Description de l'image 1">
+            How do you fetch and merge changes from a remote repository, and what is the purpose of fetching?
+        </article>
+        <article class="response">
+            Pour récupérer les dernières modifications sans fusionner  utilisez <strong>$git fetch</strong> aprés utilisé <strong>$git merge</strong>pour fusionner.
+            ou bien utilisé <strong>$git pull</strong> pour faire les deux en méme temps.
+            Fetching permet de mettre à jour votre copie locale sans immédiatement appliquer les changements.
+        </article>
+    </article>
+</body>
+
+</html>
